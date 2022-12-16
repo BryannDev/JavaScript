@@ -1,30 +1,27 @@
-function soma(n1, n2){
-    return n1 + n2;
+function clicou() {
+  document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+  //console.log(document.getElementById("agradecimento"));
+  //alert("Obrigado por clicar")
+}
+function redirecionar() {
+window.open("https://www.linkedin.com/feed/"); 
+//window.location.href = "https://www.linkedin.com/feed/"; 
 }
 
-function validaIdade(Idade) {
-  var validar;
-  if (Idade >= 18){
-    validar = true
-  }else{
-    validar = false
-  }
-  return validar;
+function trocar(elemento) {
+  elemento.innerHTML = "Obrigado por passar o mouse";
+  //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+  //alert("trocar texto")
 }
 
-var idade = prompt("Qual sua idade?");
-console.log(validaIdade(idade));
-
-//alert(soma(5, 10));
-//var lista = ("", "", "", "", "", "", "");
-//var nome = "Bryan Soares";
-//var idade = 21;
-//var idade2 = 10;
-//var frase = "Japão é o melhor time do mundo"
-//alert(nome + " tem " + idade + " anos ");
-//alert(idade + idade2);
-//console.log(nome);
-//console.log(idade + idade2);
-//console.log(frase.replace("Japão", "Brasil"));
-//alert(frase.replace ("Japão", "Brasil"));
-   
+function voltar(elemento) {
+  elemento.innerHTML = "Passe o mouse aqui"
+  //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+}
+function load() {
+  alert("Página carregada");
+}
+function funcaoChange(elemento) {
+  console.log(elemento.value);
+  
+}
